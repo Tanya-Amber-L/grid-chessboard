@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 32% 2% 540px 32%;
+    grid-template-rows: 24% 3% 540px 24%;
+
+    height: 100vh;
+}
+
+p.letters{
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+
+    letter-spacing: 23px;
+    padding-left: 40px;
+}
+
+p.numbers {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+
+    line-height: 62px;
+    padding-top: 27px;
+}
+
+
+.chessboard {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+
+    width: 500px;
+    height: 500px;
+    background-image: url(https://i.postimg.cc/VLMpKspx/3125-YYI4x-PL-SX466.jpg);
+    background-size: 25%;
+    background-repeat: repeat;
+
+    border: 20px solid grey;
+
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    grid-template-areas:"a1 b1 c1 d1 e1 f1 g1 h1" 
+                        "A2 B2 C2 D2 E2 F2 G2 H2"
+                        "A3 B3 C3 D3 E3 F3 G3 H3"
+                        "A4 B4 C4 D4 E4 F4 G4 H4"
+                        "A5 B5 C5 D5 E5 F5 G5 H5"
+                        "A6 B6 C6 D6 E6 F6 G6 H6"
+                        "A7 B7 C7 D7 E7 F7 G7 H7"
+                        "A8 B8 C8 D8 E8 F8 G8 H8";
+    text-align: center;                
+}
+
+/*all chess pieces*/
+
+.chessboard p {
+    color: grey;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Black*/
+.black-rook1 {
+    grid-area: a1;
+}
+.black-knight1 {
+    grid-area: b1;
+}
+.black-bishop1 {
+    grid-area: c1;
+}
+.black-king {
+    grid-area: d1;
+}
+.black-queen {
+    grid-area: e1;
+}
+.black-bishop2 {
+    grid-area: f1;
+}
+.black-knight2 {
+    grid-area: g1;
+}
+.black-rook2 {
+    grid-area: h1;
+}
+
+
+.black-pawn1 {
+    grid-area: A2;
+}
+.black-pawn2 {
+    grid-area: B2;
+}
+.black-pawn3 {
+    grid-area: C2;
+}
+.black-pawn4 {
+    grid-area: D2;
+}
+.black-pawn5 {
+    grid-area: E2;
+}
+.black-pawn6 {
+    grid-area: F2;
+}
+.black-pawn7 {
+    grid-area: G2;
+}
+.black-pawn8 {
+    grid-area: H2;
+}
+
+
+/*white*/
+.white-rook1 {
+    grid-area: A8;
+}
+.white-knight1 {
+    grid-area: B8;
+}
+.white-bishop1 {
+    grid-area: C8;
+}
+.white-king {
+    grid-area: D8;
+}
+.white-queen {
+    grid-area: E8;
+}
+.white-bishop2 {
+    grid-area: F8;
+}
+.white-knight2 {
+    grid-area: G8;
+}
+.white-rook2 {
+    grid-area: H8;
+}
+
+
+.white-pawn1 {
+    grid-area: A7;
+}
+.white-pawn2 {
+    grid-area: B7;
+}
+.white-pawn3 {
+    grid-area: C7;
+}
+.white-pawn4 {
+    grid-area: D7;
+}
+.white-pawn5 {
+    grid-area: E7;
+}
+.white-pawn6 {
+    grid-area: F7;
+}
+.white-pawn7 {
+    grid-area: G7;
+}
+.white-pawn8 {
+    grid-area: H7;
+}
