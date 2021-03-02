@@ -1,5 +1,5 @@
 # grid-chessboard
-One of my first projects with HTml & CSS, using grid.
+One of my first projects with Html & CSS, using grid.
 
 TODO: Change the way icons are used + responsive?
 
